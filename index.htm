@@ -77,7 +77,7 @@
             // スクロール量に応じて音量を調整
             var volume = 1 - window.scrollY / (document.body.scrollHeight - window.innerHeight);
             // 音量を0から1の範囲に制限
-            volume = Math.max(0, Math.min(1, volume));
+            volume = Math.max(1, Math.min(1, volume));
             audio.volume = volume; // 音量を設定
         });
 
